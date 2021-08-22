@@ -1,0 +1,13 @@
+<div class="container">
+  <ul *ngFor="let bill of bills" class="list-group">
+    <li class="list-group-item">
+      <h3 class="car-title">
+        {{ bill.category}}
+      </h3>
+      <div class="card-body">
+        <p >{{bill.date }}</p>
+        <p >{{bill.price | currency:'EUR'}}</p>
+      </div>
+    </li>
+  </ul>
+</div>
